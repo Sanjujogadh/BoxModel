@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img#flowerRight{
+            float:right;
+        }
+
+        img#flowerLeft{
+            float:left;
+        }
+
+        p:not(:first-of-type){
+            text-decoration: underline;
+            color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Float Right</h2>
+    <p>In HTML, "float" refers to a CSS property used for positioning and layout. The float property allows you to take an element out of the normal document flow and position it to the left or right within its containing element. Other content, such as text, will then wrap around the floated element.
+</p>
+
+<p>
+    <img id="flowerRight" src="tree.webp" alt="tree"
+    style="width:100px;height:100px;">
+
+    <img id="flowerLeft" src="tree.webp" alt="tree"
+    style="width:100px;height:100px;">
+
+    How float works:
+Removal from Normal Flow:
+When an element is floated, it is removed from the normal flow of the document. This means other elements will behave as if the floated element is not there in terms of vertical positioning.
+Positioning -The floated element is shifted to the specified side (left or right) until it touches the edge of its containing box or another floated element.
+Content Wrapping-Text and other inline content will flow around the floated element, filling the available space. 
+Common float values-none (default): The element does not float and remains in the normal document flow.
+left: Floats the element to the left side of its container. 
+right: Floats the element to the right side of its container. 
+</p>
+
+    
+</body>
+</html>
